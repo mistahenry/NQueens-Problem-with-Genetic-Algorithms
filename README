@@ -1,0 +1,29 @@
+This code solves the N queens problem using a genetic algorithm.
+The fitness function is based on the number of checks. So the 
+algorithm is essentially a minimization problem (0 is the goal).
+
+Rather than analytically or iteratively solving the problem, my
+algorith uses intelligent crossover and mutation with a population
+of vectors of board positions to evolve better boards with each 
+generation.
+
+Sample output for the classic 8 queens problem.
+Found Solution.
+2 4 1 7 0 6 3 5 
++---+---+---+---+---+---+---+---+
+|   |   | Q |   |   |   |   |   | 
++---+---+---+---+---+---+---+---+
+|   |   |   |   | Q |   |   |   | 
++---+---+---+---+---+---+---+---+
+|   | Q |   |   |   |   |   |   | 
++---+---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   | Q | 
++---+---+---+---+---+---+---+---+
+| Q |   |   |   |   |   |   |   | 
++---+---+---+---+---+---+---+---+
+|   |   |   |   |   |   | Q |   | 
++---+---+---+---+---+---+---+---+
+|   |   |   | Q |   |   |   |   | 
++---+---+---+---+---+---+---+---+
+|   |   |   |   |   | Q |   |   | 
++---+---+---+---+---+---+---+---+
